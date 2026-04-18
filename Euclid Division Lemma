@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int dividend, divisor;
+
+    cout << "Enter Dividend: ";
+    cin >> dividend;
+
+    cout << "Enter Divisor: ";
+    cin >> divisor;
+
+    if (divisor == 0) {
+        cout << "Division by zero is not allowed." << endl;
+        return 0;
+    }
+
+    int quotient = dividend / divisor;
+    int remainder = dividend % divisor;
+
+    cout << "\nEuclid's Division Lemma:" << endl;
+    cout << "Dividend = (Divisor × Quotient) + Remainder" << endl;
+    cout << dividend << " = (" << divisor << " × " << quotient << ") + " << remainder << endl;
+
+    return 0;
+}
